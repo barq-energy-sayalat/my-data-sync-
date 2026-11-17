@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#2c5fd6">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon-192.png">
-<title>BIS CO. – Plant Dashboard</title>
+<title>Electrical Book</title>
 <style>
   :root{--blue:#4a80e8;--dark:#1f3a7a;--deep:#12296b;--ink:#10265e;--mid:#2c5fd6;--lite:#6ea2ff;
         --bg:#dfe8f8;--tint:#eaf0fd;--tint2:#f5f8fe;--g1:#eef4ff;--g2:#dfe9ff}
@@ -1784,7 +1784,7 @@
     const st = plantStats();
 
     /* top bar: logo + menu (login is inside the menu) */
-    const top = h(`<div class="dtop"><div class="dlogo">${LOGO}<span>BIS CO.</span></div><div class="dtools"></div></div>`);
+    const top = h(`<div class="dtop"><div class="dlogo"></div><div class="dtools"></div></div>`);
     const mb = h(`<div class="dbtn${me ? " adm" : ""}"><div class="hb"><i></i><i></i><i></i></div></div>`);
     mb.onclick = openMenu;
     top.querySelector(".dtools").append(mb);
@@ -1825,7 +1825,7 @@
     ban.querySelector(".bbtn").onclick = () => sum.scrollIntoView({behavior:"smooth", block:"center"});
 
     /* footer */
-    const foot = h(`<div class="dfoot"><div class="sky">${SV.sky}</div><div></div><div class="fm">BIS CO.</div><div class="fr"><i class="dot"></i><span class="onlt"></span></div></div>`);
+    const foot = h(`<div class="dfoot"><div class="sky">${SV.sky}</div><div></div><div class="fm"></div><div class="fr"><i class="dot"></i><span class="onlt"></span></div></div>`);
 
     inp.oninput = () => {
       const q = inp.value.trim();
@@ -1866,7 +1866,7 @@
 
     /* header with photo */
     const head = h(`<div class="zhead"><div class="zimg"></div><div class="zov"></div>
-      <div class="ztop"><div class="cbtn zb">←</div><div class="dlogo">${LOGO}<span>BIS CO.</span></div><div class="cbtn zm">☰</div></div>
+      <div class="ztop"><div class="cbtn zb">←</div><div class="dlogo"></div><div class="cbtn zm">☰</div></div>
       <div class="ztx">
         <div class="zname"><div class="zbi" style="--zc:${meta.c}">${SV[meta.icon] || SV.gear}</div><b></b></div>
         <div class="zh1"></div><div class="zh2"></div>
